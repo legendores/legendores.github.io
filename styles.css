@@ -1,0 +1,43 @@
+body, html {
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.box-line {
+    text-align: center;
+    width: 25%;
+    height: fit-content;
+    background: rgb(180, 180, 180);
+    border-radius: 10px;
+}
+
+.startButton {
+    margin: auto;
+    width: 500px;
+    height: 200px;
+    background-size: contain;
+    background-image: url(./files/start.png);
+    background-repeat: no-repeat;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.startButton:hover {
+    background-image: url(./files/starthover.png);
+}
+
+.staffBox {
+    border-radius: 10px;
+    background: rgb(180, 180, 180);
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 200px;
+}
