@@ -54,3 +54,48 @@ body, html {
     border: 1px solid black;
     transform: rotate(-20deg);
 }
+
+.downloadButton {
+    background-image: url(./files/download.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 147px;
+    height: 200px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.downloadButton:hover {
+    background-image: url(./files/downloadhover.png);
+}
+
+nav {
+    background-color: #333333a8;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+nav img {
+    vertical-align: middle;
+}
