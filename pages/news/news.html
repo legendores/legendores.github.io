@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./news.css">
+    <title>LegendOres | News</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <div onclick="reload()" class="pickaxe-container">
+                <img class="pickaxe" src="../../files/pickaxe.png" alt="Pickaxe">
+                <span class="pickaxe-text">LegendOres</span>
+            </div>
+            <a onclick="goToFile('../../index.html')">Home</a>
+            <a onclick="scrollOtherPage('start')">Start</a>
+            <a onclick="scrollOtherPage('pack')">Pack</a>
+            <a onclick="scrollOtherPage('staff')">Staff</a>
+            <a onclick="scrollOtherPage('news')">News</a>
+            <img onclick="joinMessage()" src="../../files/controller.png" style="cursor: pointer;height: 60px;margin-left: 10px;" alt="Controller">
+        </ul>
+    </nav>
+    <div style="padding-top: 70px;text-align: center;">
+        <p style="font-size: 50px;font-weight: bold;">News</p>
+        <p style="text-align: left;font-size: 20px;margin-left: calc(50% - 130px);">Latest</p>
+        <div class="boxNewsContainer">
+            <div class="boxNews">
+                <p style="font-size: 20px;font-weight: bold;">Season Two just got out!</p>
+                <div class="curvedLineBoxNews"></div>
+                <div style="text-align: left;margin-left: 20px;line-height: 30px;">
+                    <li><span>Added a /ench command to enchant your armors and tools.</span></li>
+                    <li><span>Added new items & new ores: </span></li>
+                    <li><span>New map.</span></li>
+                    <li><span>New website design.</span></li>
+                    <li><span>New Logo.</span></li>
+                </div>
+            </div>
+            <!--
+            <div class="boxNews">
+                <p>Season Two just got out!</p>
+            </div>
+            -->
+        </div>
+        <!--
+        <div class="boxNewsContainer" style="margin-top: 25px;">
+            <div class="boxNews">
+                <p>Season Two just got out!</p>
+            </div>
+            <div class="boxNews">
+                <p>Season Two just got out!</p>
+            </div>
+        </div>
+        -->
+    </div>
+</body>
+<script src="../../index.js"></script>
+<script src="../../config.js"></script>
+</html>

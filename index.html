@@ -9,19 +9,30 @@
 <body>
     <nav class="nav">
         <ul>
+            <div onclick="reload()" class="pickaxe-container">
+                <img class="pickaxe" src="./files/pickaxe.png" alt="Pickaxe">
+                <span class="pickaxe-text">LegendOres</span>
+            </div>
+            <a onclick="goToFile(window.location.href === './pages/news/news.html' ? '../../index.html' : './index.html')">Home</a>
             <a onclick="scrollToSection('start')">Start</a>
             <a onclick="scrollToSection('pack')">Pack</a>
             <a onclick="scrollToSection('staff')">Staff</a>
-            <a onclick="scrollToSection('customOres')">Custom Ores</a>
+            <a onclick="goToFile('./pages/news/news.html')">News</a>
             <img onclick="joinMessage()" src="./files/controller.png" style="cursor: pointer;height: 60px;margin-left: 10px;" alt="Controller">
         </ul>
     </nav>
     <div class="main">
-        <img src="./files/Spawn.png" alt="Spawn" width="100%" height="900px">
+        <!--<img src="./files/Spawn.png" alt="Spawn" width="100%" height="900px">-->
+        <img src="./files/newspawn.png" alt="Spawn" width="100%" height="900px">
         <p style="position: absolute;top: 30%;left: 50%;transform: translate(-50%, -50%);font-weight: bold;color: white;font-size: 50px;">LegendOres</p>
+        <p style="position: absolute;top: 30%;left: 45%;transform: translate(-50%, -50%);font-weight: bold;color: rgb(218, 0, 0);font-size: 35px;text-shadow: 1px 1px 1px black;transform: rotate(20deg);">SEASON TWO</p>
     </div>
     <div>
         <div onclick="joinMessage()" class="startButton" id="start"></div>
+        <div class="newsBox" id="news">
+            <p style="font-size: 25px;font-weight: bold;">Latest News</p>
+            <p><span style="font-weight: bold;">LegendOres season two just got out!</span> <span style="color: rgba(0, 0, 255, 0.5);font-weight: bold;cursor: pointer;" onclick="scrollToSection('seasonTwo')">Check</span> the change log to know what's new!</p>
+        </div>
         <div class="box-line" style="margin-left: 10px;" id="customOres">
             <p style="padding: 10px 0 0 10px;font-size: 25px;font-weight: bold;">Custom Ores</p>
             <p style="padding: 0 0 10px 10px;font-size: 20px;">LegendOres introduces unique and custom ores into the game, elevating the gameplay experience with a diverse array of mineral resources.</p>
@@ -50,11 +61,20 @@
             <p style="font-size: 17px;">KizaruKun, the mastermind behind this extraordinary texture pack, has infused it with a genuine labor of love. Each brushstroke and pixel reflects not only skill but a profound passion and heart for the craft. As you delve into the immersive world crafted by KizaruKun, the commitment to perfection becomes palpable. The textures don't just look good; they radiate a visual allure that is a testament to the artist's dedication. It's more than just a collection of visuals; it's a journey through an aesthetically pleasing realm, skillfully brought to life by the hands and heart of KizaruKun.</p>
             <div onclick="downloadPack()" class="downloadButton"></div>
         </div>
+        <div class="curved-line" id="seasonTwo"></div>
+        <div style="margin-left: 10px;margin-bottom: 100px;">
+            <p style="text-align: left;font-size: 25px;font-weight: bold;">Season Two Change Log</p>
+            <li><span>Added a /ench command to enchant your armors and tools.</span></li>
+            <li><span>Added new items & new ores: </span></li>
+            <li><span>New map.</span></li>
+            <li><span>New website design.</span></li>
+            <li><span>New Logo.</span></li>
+        </div>
         <div>
             <p style="margin-left: 10px;">© 2024 LegendOres. All Rights Reserved.</p>
         </div>
     </div>
 </body>
-<script src="./options.js"></script>
+<script src="./config.js"></script>
 <script src="./index.js"></script>
 </html>

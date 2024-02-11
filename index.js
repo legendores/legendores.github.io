@@ -10,11 +10,34 @@ function downloadPack() {
 }
 
 function scrollToSection(sectionId) {
-    var targetSection = document.getElementById(sectionId);
+    let targetSection = document.getElementById(sectionId);
+
     if (targetSection) {
         window.scrollTo({
-            top: targetSection.offsetTop,
+            top: (targetSection.offsetTop - (window.innerHeight - targetSection.offsetHeight) / 2),
             behavior: 'smooth'
         });
     }
+}
+
+function reload() {
+    location.reload();
+}
+
+function goToFile(file) {
+    window.location.href = file
+}
+
+function scrollOtherPage(sectionId) {
+    window.onload = function () {
+        let targetSection = document.getElementById(sectionId);
+
+        if (targetSection) {
+            window.scrollTo({
+                top: (targetSection.offsetTop - (window.innerHeight - targetSection.offsetHeight) / 2),
+                behavior: 'smooth'
+            });
+        }
+    };
+    window.location.href = "../../index.html";
 }

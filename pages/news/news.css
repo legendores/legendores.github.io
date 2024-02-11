@@ -1,0 +1,83 @@
+body, html {
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: default;
+}
+
+nav {
+    background-color: #333333a8;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+nav img {
+    vertical-align: middle;
+}
+
+nav a {
+    cursor: pointer;
+}
+
+.pickaxe-container {
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+}
+
+.pickaxe-text {
+    position: absolute;
+    left: 80px;
+    top: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.pickaxe {
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.boxNewsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.boxNews {
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    /*margin-left: 50px; To Enable when multiple box.*/
+    box-shadow: black 1px 1px 1px;
+    background: rgba(128, 128, 128, 0.669);
+}
+
+.curvedLineBoxNews {
+    width: 333px;
+    height: 100px;
+    border: solid 3px #000;
+    border-color: #000 transparent transparent transparent;
+    border-radius: 50%/0 100px 0 0;
+    margin-bottom: -70px;
+    margin-top: 25px;
+}

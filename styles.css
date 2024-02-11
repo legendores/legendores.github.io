@@ -1,6 +1,7 @@
 body, html {
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: default;
 }
 
 .main {
@@ -16,6 +17,7 @@ body, html {
     height: fit-content;
     background: rgb(180, 180, 180);
     border-radius: 10px;
+    box-shadow: black 1px 1px 1px;
 }
 
 .startButton {
@@ -40,6 +42,7 @@ body, html {
     margin-top: 50px;
     margin-left: 50px;
     width: 500px;
+    box-shadow: black 1px 1px 1px;
 }
 
 .image-container {
@@ -101,5 +104,46 @@ nav img {
 }
 
 nav a {
+    cursor: pointer;
+}
+
+.curved-line {
+    width: 600px;
+    height: 100px;
+    border: solid 5px #000;
+    border-color: #000 transparent transparent transparent;
+    border-radius: 50%/0 100px 0 0;
+}
+
+.newsBox {
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: black 1px 1px 1px;
+    background: rgba(104, 104, 104, 0.471);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.pickaxe-container {
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+}
+
+.pickaxe-text {
+    position: absolute;
+    left: 80px;
+    top: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.pickaxe {
+    width: 50px;
+    height: 50px;
+    top: 5px;
     cursor: pointer;
 }
